@@ -1,0 +1,10 @@
+.cache/
+.direnv/
+build/
+
+*.elf
+*.bin
+*.hex
+*.o
+
+compile_commands.json
