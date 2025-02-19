@@ -18,9 +18,8 @@ F_CPU            = 16000000UL
 
 # Compiler/linker flags
 CFLAGS  = -mmcu=$(MCU) -DF_CPU=$(F_CPU)
-CFLAGS += -Wall -Os -std=gnu11
-CFLAGS += --param=min-pagesize=0
-CFLAGS += -MMD -MP  # Generate dependency files
+CFLAGS += -Wall -Os
+CFLAGS += -MMD -MP
 CFLAGS += -I${AVR_PATH}/include
 
 LDFLAGS = -mmcu=$(MCU)
